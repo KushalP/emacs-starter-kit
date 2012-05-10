@@ -1,4 +1,23 @@
-*elc
+# Mac OS X
 .DS_Store
+._*
+
+# Emacs (general)
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+.elc
+*elc
+auto-save-list
+tramp
+.\#*
+
+# Emacs (running or environment)
+places
+elpa
+.smex-items
+
+# Starter Kit
 starter-kit-2.*
 *.tar

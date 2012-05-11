@@ -23,6 +23,7 @@
     rvm
 
     ;; Languages.
+    caml
     clojure-mode
     clojure-test-mode
     clojurescript-mode
@@ -31,10 +32,13 @@
     feature-mode ;; Cucumber
     go-mode
     haskell-mode
+    lua-mode
     markdown-mode
     php-mode
     protobuf-mode
+    puppet-mode
     python-mode
+    sass-mode
     scala-mode
     yaml-mode)
   "A list of packages to ensure are installed at launch.")
@@ -102,3 +106,25 @@
 
 ;; Stops the annoying jump when moving around.
 (require 'smooth-scroll)
+
+;; Fix up the files that are run with ruby-mode.
+(defun set-mode-for-filename-patterns (mode filename-pattern-list)
+  (mapcar
+   (lambda (filename-pattern)
+     (setq
+      auto-mode-alist
+      (cons (cons filename-pattern mode) auto-mode-alist)))
+   filename-pattern-list))
+
+(set-mode-for-filename-patterns 'ruby-mode
+                                '("\\.rb$"
+                                  "\\.rsel$"
+                                  "\\.rhtml$"
+                                  "\\.erb$"
+                                  "\\.prawn$"
+                                  "Rakefile$"
+                                  "Gemfile$"))
+
+;; Turn on YAML mode.
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))

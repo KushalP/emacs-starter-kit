@@ -20,6 +20,7 @@
     color-theme-twilight
 
     ;; Misc.
+    full-ack
     org
     rvm
 
@@ -132,3 +133,10 @@
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
 (require 'ruby-test-mode)
+
+;; Ack-tastic!
+(add-to-list 'load-path "~/.emacs.d/elpa/full-ack-0.2.3/")
+(autoload 'ack-same "full-ack" nil t)
+(autoload 'ack "full-ack" nil t)
+(autoload 'ack-find-same-file "full-ack" nil t)
+(autoload 'ack-find-file "full-ack" nil t)

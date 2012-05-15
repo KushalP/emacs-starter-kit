@@ -11,6 +11,7 @@
     starter-kit
     starter-kit-lisp
     starter-kit-bindings
+    starter-kit-ruby
 
     ;; UI related.
     smooth-scroll
@@ -38,6 +39,7 @@
     protobuf-mode
     puppet-mode
     python-mode
+    ruby-test-mode
     sass-mode
     scala-mode
     yaml-mode)
@@ -128,3 +130,5 @@
 ;; Turn on YAML mode.
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+
+(require 'ruby-test-mode)

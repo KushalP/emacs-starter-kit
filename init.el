@@ -132,10 +132,13 @@
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
+;; Ruby.
 (require 'ruby-test-mode)
+(require 'rvm)
+(rvm-use-default) ;; use rvm's default ruby for the current Emacs session.
 
 ;; Ack-tastic!
-(add-to-list 'load-path "~/.emacs.d/elpa/full-ack-0.2.3/")
+(add-to-list 'load-path "~/.emacs.d/elpa/full-ack-0.2.3/full-ack.el")
 (autoload 'ack-same "full-ack" nil t)
 (autoload 'ack "full-ack" nil t)
 (autoload 'ack-find-same-file "full-ack" nil t)

@@ -1,3 +1,6 @@
 [submodule "vendor/use-package"]
 	path = vendor/use-package
 	url = https://github.com/jwiegley/use-package.git
+[submodule "vendor/eproject-mode"]
+	path = vendor/eproject-mode
+	url = https://github.com/jrockway/eproject.git

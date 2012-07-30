@@ -4,3 +4,6 @@
 [submodule "vendor/eproject-mode"]
 	path = vendor/eproject-mode
 	url = https://github.com/jrockway/eproject.git
+[submodule "vendor/rhtml-mode"]
+	path = vendor/rhtml-mode
+	url = https://github.com/eschulte/rhtml.git

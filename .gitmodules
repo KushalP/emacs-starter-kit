@@ -7,3 +7,6 @@
 [submodule "vendor/rhtml-mode"]
 	path = vendor/rhtml-mode
 	url = https://github.com/eschulte/rhtml.git
+[submodule "vendor/json-mode"]
+	path = vendor/json-mode
+	url = https://github.com/joshwnj/json-mode.git

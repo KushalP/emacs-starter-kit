@@ -76,6 +76,14 @@
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
 
+;; Prevent Emacs from extending file when pressing down arrow
+;; at end of buffer.
+(setq next-line-add-newlines nil)
+;; Silently ensure newline at end of file;
+(setq require-final-newline t)
+;; or make Emacs ask about missing newline,
+(setq require-final-newline 'ask)
+
 (set-face-attribute
  'default nil
  :font    "Deja-Vu-Sans-Mono-14")

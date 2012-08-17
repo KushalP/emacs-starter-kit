@@ -107,7 +107,8 @@
 
 ;; ERB templates
 (use-package rhtml-mode
-  :mode ("\\.html\\.erb\\'" . rhtml-mode))
+  :mode (("\\.rhtml$" . rhtml-mode)
+         ("\\.erb$" . rhtml-mode)))
 
 ;; Ruby mode
 (use-package ruby-mode

@@ -19,6 +19,7 @@ elpa
 places
 swank
 url
+abbrev_defs
 
 # Starter Kit
 *.tar

@@ -143,3 +143,6 @@
 
 ;; Load the custom modes.
 (load (concat dotfiles-dir "modes.el"))
+
+;; Load the custom variables.
+(load (concat dotfiles-dir "custom-variables.el"))

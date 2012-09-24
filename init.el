@@ -43,7 +43,6 @@
     python-mode
     ruby-test-mode
     sass-mode
-    scss-mode
     scala-mode
     yaml-mode)
   "A list of packages to ensure are installed at launch.")

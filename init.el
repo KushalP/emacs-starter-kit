@@ -140,6 +140,9 @@
 ;; Show trailing whitespace.
 (setq-default show-trailing-whitespace t)
 
+;; Load the custom variables.
+(load (concat dotfiles-dir "custom-variables.el"))
+
 ;; Load the custom modes.
 (load (concat dotfiles-dir "modes.el"))
 

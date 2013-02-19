@@ -21,6 +21,7 @@
 
     ;; Misc.
     ack-and-a-half
+    nrepl
     org
     rvm
 

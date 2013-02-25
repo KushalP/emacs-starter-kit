@@ -141,6 +141,14 @@
 ;; Show trailing whitespace.
 (setq-default show-trailing-whitespace t)
 
+;; Do not save backup files in the same directory
+(setq backup-directory-alist `(("." . "~/.saves")))
+(setq backup-by-copying t)
+(setq delete-old-versions t
+      kept-new-versions 6
+      kept-old-versions 2
+      version-control t)
+
 ;; Load the custom variables.
 (load (concat dotfiles-dir "custom-variables.el"))
 

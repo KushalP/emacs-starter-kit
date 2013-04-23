@@ -13,6 +13,10 @@
                                                       (add-to-list 'ack-and-a-half-root-directory-functions
                                                                    'eproject-root))))))
 
+(use-package go-mode
+  :config (progn
+            (setq-default tab-width 4)))
+
 ;; eproject mode
 (use-package eproject
   :config (progn

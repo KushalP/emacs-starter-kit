@@ -10,3 +10,6 @@
 [submodule "vendor/json-mode"]
 	path = vendor/json-mode
 	url = https://github.com/joshwnj/json-mode.git
+[submodule "vendor/auto-complete-golang"]
+	path = vendor/auto-complete-golang
+	url = git@github.com:koko1000ban/auto-complete-golang.git

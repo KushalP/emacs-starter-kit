@@ -15,7 +15,10 @@
 
 (use-package go-mode
   :config (progn
-            (setq-default tab-width 4)))
+            (setq-default tab-width 4)
+            (require 'auto-complete-golang)
+            (add-hook 'go-mode-hook
+                      '(lambda () (add-to-list 'ac-sources 'ac-source-golang)))))
 
 ;; eproject mode
 (use-package eproject

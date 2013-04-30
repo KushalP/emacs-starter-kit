@@ -20,6 +20,7 @@
     color-theme-twilight
 
     ;; Misc.
+    auto-complete
     ack-and-a-half
     nrepl
     org

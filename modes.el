@@ -103,6 +103,9 @@
 (use-package json-mode
   :mode ("\\.json\\'" . json-mode))
 
+(use-package sass-mode
+  :mode ("\\.scss\\'" . sass-mode))
+
 ;; markdown
 (use-package markdown-mode
   :mode (("\\.md$" . markdown-mode)

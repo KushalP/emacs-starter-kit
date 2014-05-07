@@ -14,7 +14,9 @@
                                                                    'eproject-root))))))
 
 (use-package go-mode
-  :config (progn (setq-default tab-width 4)))
+  :config (progn (setq-default tab-width 4)
+                 ;; auto-format my Golang files correctly
+                 (add-hook 'before-save-hook 'gofmt-before-save)))
 
 ;; eproject mode
 (use-package eproject

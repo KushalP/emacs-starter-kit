@@ -109,6 +109,9 @@
   :mode (("\\.md$" . markdown-mode)
          ("\\.markdown$" . markdown-mode)))
 
+(use-package nginx-mode
+  :mode ("\\.conf\\'" . nginx-mode))
+
 ;; Puppet manifests
 (use-package puppet-mode
   :mode ("\\.pp$" . puppet-mode))

@@ -39,6 +39,7 @@
     js2-mode
     lua-mode
     markdown-mode
+    nginx-mode
     php-mode
     protobuf-mode
     puppet-mode
